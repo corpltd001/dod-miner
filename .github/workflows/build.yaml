@@ -10,7 +10,7 @@ on:
       - v[0-9]+.*
 
 env:
-  GITHUB_TOKEN: ${{ github.token }}
+  GITHUB_PAT: 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
   RUST_BACKTRACE: 1
 
 permissions:
@@ -106,4 +106,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: 'dod_miner-*'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: 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
